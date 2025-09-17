@@ -1,42 +1,144 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Malykhina E.E.</title>
+    <title>Малыхина Екатерина Евгеньевна</title>
     <style>
-        body{
-            background-color: rgb(134, 162, 163);
+        :root {
+            --main-bg: #f8f9fa;
+            --accent: #5d9cec;
+            --text: #333;
+            --text-light: #666;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            --radius: 8px;
         }
-        h1{
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: var(--text);
+            background-color: var(--main-bg);
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
             text-align: center;
+            margin-bottom: 30px;
         }
-        h2{
-            color: rgb(39, 38, 38);
+
+        h1 {
+            color: var(--accent);
+            font-weight: 600;
+            margin-bottom: 5px;
         }
-    
+
+        .subtitle {
+            color: var(--text-light);
+            font-size: 18px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            margin-bottom: 40px;
+            max-width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .photo {
+            flex: 0 0 300px;
+            max-width: 100%;
+        }
+
+        .photo img {
+            width: 100%;
+            height: auto;
+            display: block;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .description {
+            flex: 1;
+            min-width: 250px;
+            padding: 10px 0;
+        }
+
+        .description p {
+            margin-bottom: 15px;
+        }
+
+        .works {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            padding: 25px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+        }
+
+        .works h2 {
+            color: var(--accent);
+            font-size: 20px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #eee;
+            padding-bottom: 10px;
+        }
+
+        .works a {
+            display: inline-block;
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            margin-bottom: 15px;
+            transition: all 0.3s ease;
+        }
+
+        .works a:hover {
+            color: #406852;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+        }
     </style>
 </head>
 <body>
-    <h1>Малыхина Екатерина Евгеньевна, ИС-3.1</h1>
-    <ing src="фото.jpg"/>
-    <h2>Работа 1</h2>
-    <a href="1.html">работа 1</a> <br>
+    <div class="header">
+        <h1>Малыхина Екатерина Евгеньевна</h1>
+        <p class="subtitle">Студентка группы ИС-3.1</p>
+    </div>
 
-     <h2>Работа 2</h2>
-    <a href="1.html">работа 2</a> <br>
+    <div class="container">
+        <div class="photo">
+            <img src="Кот.jpg" alt="Малыхина Екатерина Евгеньевна">
+        </div>
+        <div class="description">
+            <p>Добро пожаловать на мою личную страницу! Здесь вы можете узнать обо мне, моих учебных проектах и достижениях. Я учусь на направлении "Информационные системы и программирование" и активно развиваюсь в области IT-технологий.</p>
+            <p>На этой странице представлены мои работы, выполненные в рамках учебного процесса. Если у вас есть вопросы или предложения, не стесняйтесь связаться со мной.</p>
+        </div>
+    </div>
 
-     <h2>Работа 3</h2>
-    <a href="1.html">работа 3</a>
-
-    <h2>Работа 4</h2>
-    <a href="1.html">работа 4</a> <br>
-
-     <h2>Работа 5</h2>
-    <a href="1.html">работа 5</a> <br>
-
-     <h2>Работа 6</h2>
-    <a href="1.html">работа 6</a>
-
+    <div class="works">
+        <h2>Мои работы</h2>
+        <a href="1.html">Работа 1: Разработка веб-приложения на Python</a><br>
+        <a href="2.html">Работа 2: База данных для учебного проекта</a><br>
+        <a href="3.html">Работа 3: Анализ и визуализация данных</a><br>
+        <a href="4.html">Работа 4: Создание мобильного приложения</a><br>
+        <a href="5.html">Работа 5: Проектирование информационной системы</a><br>
+        <a href="6.html">Работа 6: Итоговый проект по специальности</a>
+    </div>
 </body>
 </html>
