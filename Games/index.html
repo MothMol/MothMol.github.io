@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Угадай число. Малыхина Екатерина ИС-3.1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Компьютер загадал число от 1 до 100</h1>
+        <div class="player-info">Игрок: Малыхина Екатерина</div>
+        
+        <div class="input-section">
+            <input type="number" id="userInput" placeholder="Введите ваше число" min="1" max="100">
+            <button id="submitBtn">Угадать</button>
+            <button id="newGameBtn">Новая игра</button>
+        </div>
+        
+        <div id="output"></div>
+        <div id="attempts"></div>
+        <div id="imageContainer"></div>
+    </div>
+    
+    <audio id="winSound" src="3283ff775b4b474.mp3" preload="auto"></audio>
+    <audio id="loseSound" src="0961f580f9e00da.mp3" preload="auto"></audio>
+    
+    <script src="script.js"></script>
+</body>
+</html>
