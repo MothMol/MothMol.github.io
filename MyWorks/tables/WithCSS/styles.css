@@ -1,0 +1,15 @@
+.textdes{
+    text-align: center;
+}
+
+.backcolor{
+    background-color: #00FFFF;
+}
+
+.table{
+    border-color: black;
+    width: 100%;
+    border-collapse: 1;
+    margin: 20px auto; 
+    
+}
